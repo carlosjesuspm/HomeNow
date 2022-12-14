@@ -1,0 +1,23 @@
+.box{
+	border: 1px solid black;
+	height: 550px;
+	width: 1100px;
+}
+
+.distancia{
+	height:50px;
+	width:1100px;
+}
+
+.box2 {
+    background-color: #80ffff;
+    width: 1500px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+}
+.right{
+	border: 1px solid black;
+	height: 225px;
+	width: 1100px;
+}
