@@ -14,33 +14,63 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<link href="css/main.css" rel="stylesheet">
-<title>Main Page</title>
+<script src="js/index.js"></script>
+<link href="css/acceder.css" rel="stylesheet">
+<title>acceder</title>
 </head>
 <body>
-    <div class = "container py-3">
-        <div class="card my-5">
-            <div class="card-body">
-                <div class="row m-3">
-                    <div class="col -md-6 bg-login-image"></div>
-                    <div class="col -md-6">
-                        <h1 class="h4 text-gray-900 my-3">Bienvenido</h1>
-                        <form id="form-login">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
-                            </div>
-                            <div class="form-goup">
-                                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required >
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block mt" id="btnEntrar">Entrar</button>
-                            <hr>
-                        </form>
-                    </div>
-                </div>
-                <a href="register.html">¿Aun no tienes cuenta? Registrate</a>
-                <div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o Contraseña incorrectos</div>
-            </div>
-        </div>
-    </div>
+	<nav class="navbar navbar-expand-sm  bg-dark navbar-dark justify-content-center">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Comprar</a>
+			</li>	
+			<li class="nav-item">
+				<a class="nav-link" href="#">Compartir</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="alquiler.html">Alquiler</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Hipotecas</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Guia</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Favoritos</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Publicar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="acceder.html">Acceder</a>
+			</li>
+		</ul>
+	</nav>	
+	<div class = "container py-3">
+		<div class="card my-5">
+			<div class="card-body">
+				<div class="row m-3">
+					<div class="col -md-6 bg-login-image"></div>
+					<div class="col -md-6">
+						<h1 class="h4 text-gray-900 my-3">Bienvenido</h1>
+						<form id="form-login">
+							<div class="form-group">
+								<input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+							</div>
+							<div class="form-goup">
+								<input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required >
+							</div>
+							<button type="submit" class="btn btn-primary btn-block" id="btnEntrar">Entrar</button>
+							<hr>
+						</form>
+					</div>
+				</div>
+				<a href="register.html">¿Aun no tienes cuenta? Registrate</a>
+				<a href="main.html">Volver</a>
+				<div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o Contraseña incorrectos</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
