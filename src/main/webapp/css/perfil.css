@@ -1,0 +1,23 @@
+.tamaño{
+    height: 650px;
+    width: 500px;
+}
+
+.borde{
+    border: 1px solid black;
+}
+
+.padre{
+    display: flex;
+    justify-content: center;
+}
+
+.hijo{
+    align-self: center;
+}
+
+.t2{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
