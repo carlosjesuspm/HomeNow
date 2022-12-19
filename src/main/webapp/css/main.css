@@ -19,3 +19,9 @@
 .right{
 	border: 1px solid black;
 }
+
+.box3{
+	border: 1px solid black;
+	height: 400px;
+	width: 1500px;
+}
