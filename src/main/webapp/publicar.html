@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="css/publicar.css" rel="stylesheet">
+
+	<title>Publicar</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm  bg-dark navbar-dark justify-content-center" id="mainNav">
+		<div class="container-fluid">
+            <a class="navbar-brand" href="main.html">HomeNow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="comprar.html">Comprar</a>
+					</li>	
+					<li class="nav-item">
+						<a class="nav-link" href="#">Compartir</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="alquiler.html">Alquiler</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="favoritos.html">Favoritos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="publicar.html">Publicar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acceder.html">Acceder</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>	
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-center">
+		<form class="form-inline" action="/action_page.php">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search" />
+			<button class="btn btn-success" type="submit">Buscar</button>
+		</form>
+	</nav>
+	<h2 data-qa="titulo" class="titulo">Publica tu anuncio</h2>
+	<div class="box1">
+		<label for="formGroupExampleInput" class="form-label">Escribe la ciudad</label>
+		<input type="text" class="form-control" id="city" placeholder="Ej: Barcelona">
+	</div>
+	<div class="box2">
+		<label for="formGroupExampleInput2" class="form-label">Escribe la dirección</label>
+		<input type="text" class="form-control" id="address"
+			placeholder="Nombre de la casa o edificio, calle y numero">
+	</div>
+	<div class="box3">
+		<label for="formGroupExampleInput2" class="form-label">Codigo Postal</label>
+		<input type="text" class="form-control" id="cpostal" placeholder="Ej: 41808">
+	</div>
+	<div class="box4">
+		<label for="formGroupExampleInput" class="form-label">Escalera, piso y puerta.</label>
+		<input type="text" class="form-control" id="numero" placeholder="Ej: 2º, 3A">
+	</div>
+	<h5 data-qa="form-block-title" class="carcname">Característricas del inmuble</h5>
+	<div class="alquilar">
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		<label class="form-check-label" for="flexCheckDefault">
+			Alquilar
+		</label>
+	</div>
+	<div class="comprar">
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		<label class="form-check-label" for="flexCheckDefault">
+			Comprar
+		</label>
+	</div>
+
+
+	<div class="tamaño">
+		<label for="formGroupExampleInput" class="form-label">Tamaño del inmueble</label>
+		<input type="text" class="form-control" id="formGroupExampleInput" placeholder="m2">
+	</div>
+
+
+	<h5 data-qa="form-block-title" class="nhab">Numero de habitaciones</h5>
+	<div class="b1">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		<label class="form-check-label" for="inlineRadio1">1 habitacion</label>
+	  </div>
+	  <div class="b2">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		<label class="form-check-label" for="inlineRadio2">2 habitaciones</label>
+	  </div>
+	  <div class="b3">
+		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+		<label class="form-check-label" for="inlineRadio3">3+ habitaciones</label>
+	  </div>
+	  <h5 data-qa="form-block-title" class="nbaños">Numero de baños</h5>
+	  <div class="b1">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+		  <label class="form-check-label" for="inlineRadio1">1 baño</label>
+		</div>
+		<div class="b2">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+		  <label class="form-check-label" for="inlineRadio2">2 baños</label>
+		</div>
+		<div class="b3">
+		  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+		  <label class="form-check-label" for="inlineRadio3">3+ baños</label>
+		</div>
+
+<h5 data-qa="form-block-title" class="nhab">Comodidades</h5>
+<div class="alquilar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Wifi
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Parking
+	</label>
+</div>
+<div class="alquilar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Calefacción
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Lavadora
+	</label>
+</div>
+<div class="alquilar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Secadora
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Friegaplatos
+	</label>
+</div>
+<div class="alquilar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Terraza
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Ascensor
+	</label>
+</div>
+
+<h5 data-qa="form-block-title" class="nhab">Normas de la casa</h5>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Mascotas
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Fumador/a
+	</label>
+</div>
+<div class="comprar">
+	<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+	<label class="form-check-label" for="flexCheckDefault">
+		Parejas
+	</label>
+</div>
+
+<h5 data-qa="form-block-title" class="nhab">Estableza el precio</h5>
+<div class="box4">
+	<label for="formGroupExampleInput" class="form-label">Mensual</label>
+	<input type="text" class="form-control" id="formGroupExampleInput" placeholder="euros">
+</div>
+
+	<h5 data-qa="form-block-title" class="nhab">Inicio de la fecha disponible</h5>
+<div class="cc">
+	<label for="formGroupExampleInput" class="desdetext">Desde:</label>
+	<input type="text" class="fechadesde" id="formGroupExampleInput" placeholder="dd/mm/aaaa">
+</div>
+<h5 data-qa="form-block-title" class="nhab">Suba al menos 3 fotos</h5>
+<div class="boton1">
+	<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+	<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Subir</button>
+  </div>
+  <div class="boton1">
+	<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+	<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Subir</button>
+  </div>
+  <div class="boton1">
+	<input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+	<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Subir</button>
+  </div>
+<br>
+
+<h5 data-qa="form-block-title" class="nhab">Añada una breve descripción</h5>
+<div class="ccomentario">
+	<label for="formGroupExampleInput" class="ccomentario"></label>
+	<input type="text" class="cajacomentario" id="formGroupExampleInput" placeholder="Ej: Este maravilloso piso a las afueras de Bcn...">
+	<br>
+	<button type="button" class="botonpublicar">Publicar</button>
+	<br>
+	<div class="container-fluid bg-dark text-white">
+		<div class="row">
+			<div class="col-sm-4 text-sm-center">
+				<h3>
+					<ul>Sobre nosotros</ul>
+				</h3>
+				<li>¿Quien somos?</li>
+				<li>Preguntas frecuentes</li>
+				<li>Política de privacidad</li>
+			</div>
+			<div class="col-sm-4 text-sm-center">
+				<h3>
+					<ul>Sobre nosotros</ul>
+				</h3></br>
+				<li>Contactos</li>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
