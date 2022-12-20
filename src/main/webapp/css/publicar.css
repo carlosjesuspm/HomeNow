@@ -1,0 +1,123 @@
+.titulo {
+   
+    margin: 40px;
+}
+.box1 {
+    box-sizing: border-box;
+    width: 40%;
+    height: 100px;
+    margin: 10px;
+}
+.box2 {
+    box-sizing: border-box;
+    width: 40%;
+    height: 100px;
+    margin: 10px;
+}
+.box3 {
+    box-sizing: border-box;
+    width: 10%;
+    height: 100px;
+    margin: 10px;
+}
+.box4 {
+    box-sizing: border-box;
+    width: 10%;
+    height: 100px;
+    margin: 10px;
+}
+.city {
+    width: 1500px;
+    height: 100px;
+    margin: 10px;
+}
+.address {
+    width: 1500px;
+    height: 100px;
+    margin: 10px;
+}
+.numero {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+}
+.cpostal {
+    width: 1500px;
+    height: 100px;
+    margin: 10px;
+}
+
+.alquilar {
+   
+    margin: 40px;
+}
+.comprar {
+   
+    margin: 40px;
+}
+.carcname {
+
+    margin: 40px;
+}
+.nbaños {
+
+    margin: 40px;
+}
+.tamaño {
+    box-sizing: border-box;
+    width: 10%;
+    height: 100px;
+    margin: 10px;
+}
+.b1 {
+   
+    margin: 40px;
+}
+.b2 {
+   
+    margin: 40px;
+}
+.b3 {
+    
+    margin: 40px;
+}
+.h1 {
+    
+    margin: 40px;
+}
+.h2 {
+    
+    margin: 40px;
+}
+.h3 {
+    
+    margin: 40px;
+}
+.nhab {
+    
+    margin: 40px;
+}
+.n50 {
+    box-sizing: border-box;
+    width: 40%;
+    height: 100px;
+    margin: 10px;
+}
+.desdetext {
+    
+    margin: 40px;
+}
+.boton1 {
+    box-sizing: border-box;
+    width: 20%;
+    margin: 40px;
+}
+.cajacomentario {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 40px;
+}
+.botonpublicar {
+    border: 1px solid black;
+    margin: 40px;
+}
